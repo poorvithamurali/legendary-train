@@ -1,0 +1,8 @@
+com\example\demo\model\ReviewTest.class
+com\example\demo\model\VegDTOTest.class
+com\example\demo\model\CustomerTest.class
+com\example\demo\model\AdminTest.class
+com\example\demo\model\CartTest.class
+com\example\demo\model\VegetableTest.class
+com\example\demo\OnlineVegBasketApplicationTests.class
+com\example\demo\service\VegserviceTest.class

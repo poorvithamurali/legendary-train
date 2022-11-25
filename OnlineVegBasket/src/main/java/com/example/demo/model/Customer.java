@@ -1,0 +1,81 @@
+package com.example.demo.model;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity
+public class Customer {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	int id;
+	String name;
+	int age;
+	String mobile;
+	String email;
+	String password;
+	String address;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getMobile() {
+		return mobile;
+	}
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public Customer(int id, String name, int age, String mobile, String email, String password, String address) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.mobile = mobile;
+		this.email = email;
+		this.password = password;
+		this.address = address;
+	}
+	public Customer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", age=" + age + ", mobile=" + mobile + ", email=" + email
+				+ ", password=" + password + ", address=" + address + "]";
+	}
+	
+	
+
+}
